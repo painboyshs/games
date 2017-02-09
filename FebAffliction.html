@@ -1,0 +1,162 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+var itemtemplate = '<item><item_text>TEXT</item_text></item>';
+
+var content = '<div id=mainTitleBlock><div class=game_title>Demons Affliction</div></div><div id=m_1 class=reset><div id=mainTextBlock><p id=dicebox><span id=diceresult></span></p><p id=buttonbox></p><div id=pckdg></div><div id=pckdsection></div><div id=display></div></div></div><div style=display:none>';
+//Game Set	
+var content = content.concat('<game><name>MORNING ALONE</name><section><sectionname>FAGGOT WILL SERVE</sectionname><n>1</n><item><item_text>Shit Bath - Faggot will drop its morning shit into a bowl. It will then be Pighooked and take a mouthful of shit and chew it for 15 seconds and then spit it in its hand. Faggot will smear its chewed shit over its face and body until it is utterly coated in shit.</item_text></item><item><item_text>Fiery Ass - Faggot will take the paddle upstairs to the living room and kneel on the coffee table. It will proceed to paddle its ass HARD for the hour.</item_text></item><item><item_text>Mantra Mangle - Faggots nuts will be boarded and then it will use the Ole Bastard on its nuts. Each Strike will be accompanied by the words of its Mantra. "PISSCUNT, FUCKHOLE, SHITLICK, FAGGOT" Striking its nuts brutally after each word for the hour. Failure to maintain its mantra for the entire hour will be reported to Sir for punishment.</item_text></item><item><item_text>The Art of Faggotry - Faggot will stand on the coffee table naked with a large black Sharpie. For the entire hour it will write crude degrading things on its body from its forehead down to its feet.</item_text></item><item><item_text>Piss Drowning - Faggot will clip its wrists behind its back. Its Pighooked nose will be shoved to the bottom of the piss bucket till it is desperate for air. It will then be allowed two breaths and then plunged back in. This will be repeated for the entire hour.</item_text></item><item><item_text>Wake, Bake and Flog - Faggot will be allowed to report to kitchen wearing spikes and be allowed to smoke a small bowl. It will then use the Nine Tail Hemp Whip to flog its cock and balls non stop for the remainder of the hour. </item_text></item><item><item_text>Cock Destroyer - Faggot will put the stretcher on its nuts and then use its leather collar on its cock. The first 30 minutes using the flat side, the remainder with spikes.</item_text></item><item><item_text>Ass Destroyer - Faggot will bend over and use its leather collar on its Ass. The first 30 minutes using the flat side, the remainder with spikes.</item_text></item><item><item_text>Dawn Fag Walk - Faggot will insert Big Brother in its Cunt and secure with Uniform Pants. It will be spiked and then put on thin pants. Nipple clamps will be added under a sweatshirt. It will then leave the house and must walk around the block for the hour.</item_text></item><item><item_text>Morning Drums - Faggots nuts will be boarded and stretched. Its nose will be Pighooked and it nipples clamped. It will then Use the Maul in one hand and the Ole Bastard in the other to mercilessly beat its balls till time is up.</item_text></item><item><item_text>Eatting Out: Faggot will go outside utterly naked carrying a plate. It will shit on the plate and then eat it and lick the plate clean. When done it will stand naked with its arms and legs spread wide till time is up savoring the taste of its shit.</item_text></item><item><item_text>Pigging Out: Faggot will go outside Pighooked and naked carrying a plate. It will shit on the plate, shove its snout into it, and then eat it and lick the plate clean. When done it will put its snout on the ground and keep it there till time is up.</item_text></item><item><item_text>Shit Shower - Faggot will position itself upside-down with its cunt over its face. It will then Shit, letting it flow down onto its face and open mouth. It will also piss if it can. Faggot will lay there for 10 minutes with its shit on its face. after which it will proceed to smear its body with its shit chewing and spitting out handfulls to make it nice and sloppy for the remainder of the hour.</item_text></item></section></game>');
+//Game Set	
+var content = content.concat('<game><name>MORNING NOT-ALONE</name><section><sectionname>FAGGOT WILL SERVE</sectionname><n>2</n><item><item_text>Filled Faggot - Faggot will Put its deep throat gag in its mouth and then be seated on Big Brother. It will sit there, motionless until 15 minutes prior to end of time, when it will then clean big Brother with its mouth.</item_text></item><item><item_text>Shit Fucked - Before its morning shit Faggot will fuck himself on Big Brother for 30 minutes without stopping. It will then Lick and Worship Big Brother for the remainder of the time removing all shit with its tongue.</item_text></item><item><item_text>Golf Pro - Faggot will insert 7 golf balls in its cunt and then put on Spikes. It will stand air stroking for 30 minutes. It will continue to air stroke while it shits out a single Ball, which it will then pick up in its mouth. The ball will be sucked clean and deposited in a bowl. It will repeat until all 7 balls are cleaned.</item_text></item><item><item_text>Preday Pounding - Using the Padded Bat faggot will beat its balls Non-stop for the hour with its nipples clamped.</item_text></item><item><item_text>Shit Choked - Faggot will shit into its hand and stuff it in his mouth. Faggot will then be deep throat gagged and remain so till its hour is up.</item_text></item><item><item_text>Clamp vs Cane - Faggot will clamp its Nipples for 5 minutes. One clamp will then be removed and the faggot will cane the unclamped nipple for 5 minutes. The clamp will be moved to the other nipple and then cane the freshly unclamped nipple. Switching between nipples until the hour is served.</item_text></item><item><item_text>Roped Hot Poker - Faggots  cock and balls will be tied in a Double Flute and weighted with 10lbs. Faggot will then coat its cock with Icy Hot cream and then stand air stroking watching cum shots till the end of the hour. </item_text></item><item><item_text>Piss Rag Faggot - Faggot will be put in Spikes and Pighook and then remove the shirt, bps, and socks from the Piss Bucket and put them on. It will have its nipples clamped through the wet shirt. It will dunk its head fully in the piss bucket and then stand at attention for the rest of the hour.</item_text></item><item><item_text>Dizzy Faggot - Faggot will Fuck itself on Big Brother for Five minutes while He is attached to a wall. The faggot will then spin around and suck Big Brother for five minutes. Again turning around to fuck itself, rotating Big Brother between its cunt and its mouth every five minute. </item_text></item><item><item_text>Wrapped Wakeup - Faggots balls will be put in Hell Wrap and Pighook in its nose and nipples clamped. It will kneel and have its wrists clipped behind its back to its ankles where it will stay until time is up.</item_text></item><item><item_text>Brown Nosed - Faggot will be Pighooked and then have its mouth gagged with tape. It will produce  its morning shit on the floor and then lay on its chest with its hands clipped behind its back and its nose in its shit. </item_text></item><item><item_text>Piggy Fuck - Faggot will be Pighooked and then deep fuck itself with The Snake for 10 minutes. It will then fuck its mouth and throat for 10 minutes, returning to its ass and so on until the hour is over.</item_text></item><item><item_text>Deep Dive - Faggot will slowly insert the Snake in its cunt till both heads are inside the faggot. Faggot will then stand holding in the snake by whatever means required for 20 minutes. Faggot will then squat and shit out the Snake, followed by licking up every bit of shit, chewing it and spitting it into a bowl. Faggot will then be Pighooked and plow around in the bowl of shit until time is up. </item_text></item></section></game>');
+//Game Set	
+var content = content.concat('<game><name>NIGHT ALONE</name><section><sectionname>FAGGOT WILL SERVE</sectionname><n>3</n><item><item_text>Barons Delight - Faggot will put on wrist, ankle and thigh cuffs, and then be Pighooked. Its Balls will be put in a hell wrap and clamps put on its nipples and clothespins on its tongue and inside its nose. It will then go outside where it will kneel in the gravel and hook its ankles to its thighs and wrists behind its back until time is up. </item_text></item><item><item_text>Pain Pillar - Faggot will be impaled with Feet together, Deep throat Gag in its mouth, Pighooked, and balls in steel parachute with 20lbs hanging from them. Clamps on its nipples and the outsides of its nose will be tied to a lock in the tip of its cock. Wrists will be clipped behind its head to its Pighook for the duration of the time remaining.</item_text></item><item><item_text>Waxed Wanker - Faggot will put its cock and Balls through the Spider board and then lay on its back and light 12 tea candles placing them on the board around its displayed junk. Once per minute it will dump a candle onto its cock and balls until all candles are empty.</item_text></item><item><item_text>Flaming Tits - Faggot will flog its tits with the leather collar for 20 minutes. It will then use the cane on them for another 20. It will then use the collar again alternating spike and flat side between strikes until the hour is served.</item_text></item><item><item_text>Mantra Mangle Two - Faggots nipples will be clamped and its nuts boarded, then it will use the Maul on its nuts. Each Strike will be accompanied by the words of its Mantra. "PISSCUNT, FUCKHOLE, SHITLICK, FAGGOT" Striking its nuts brutally after each word for the hour. Failure to maintain its mantra for the entire hour will be reported to Sir for punishment.</item_text></item><item><item_text>Raw Cunted Faggot - Faggot will dedicate the entire hour to making its cunt raw. First it will use the Dirty Boy Whip for 20 minutes then it will upgrade to the Cane for 20 minutes, then the flat side of collar for 10 minutes and finish out using the spiked side of collar. </item_text></item><item><item_text>Pained Piss Pig - Faggot will be Pighooked and Hell Wrapped and put the BPs from the piss bucket over its head covering its face every 5 minutes it will redunk its head.</item_text></item><item><item_text>Pulled and Pounded - Faggot will put its nuts in the stretcher. Its balls will be continuously beat hard with the Padded Bat till time is up.</item_text></item><item><item_text>BBC Plugged - Faggot will be Cock Gagged and Impaled legs wide on Big Brother while Spiked till time is up.</item_text></item><item><item_text>Paddle Cycle - Starting with its ass faggot will serve 50 strikes to each cheek, then 50 to each inner thigh, then 50 to its balls, 50 to each nipple. Then restart the cycle repeating till time is up.</item_text></item><item><item_text>Hang Em High - Faggot will be Pighooked and put on the steel Parachute. It will lay on the floor and use the pulley winch to pull up its nuts till its ass is off the ground. Every Five minutes till the hour is up its nuts will be pulled higher. </item_text></item><item><item_text>Faggot Fuck Meditation - Big Brother will be mounted to the pole at the height of the faggots cunt on his knees. The faggot will take Big Brother balls deep and then say PISSCUNT loudly as it lurches forward and then back down on Big Brother. Repeating with: FUCKHOLE, SHITLICK, FAGGOT. Reciting its mantra with faggot pride for the remainder of the hour.</item_text></item><item><item_text>Red Rum - Faggots balls will be wrapped nullifying its cock and displaying its raw sac. Faggot will pour three shots of rum and then start to beat its balls with the Red Bat. After the beating has started and then every 20 minutes faggot will drink a shot.</item_text></item><item><item_text>Ole Smoky - Faggot will put its balls in the stretcher and report outside naked with a full bowl, two cigarettes, and the Ole Bastard. First it will smoke its bowl and then beat its balls for 10 solid minutes. It will then smoke the first cigarette using its mouth as an ashtray and snuffing the butt on is ass. It will then be beat for 10 more minutes, and smoke the second adding to the ash and butt in its mouth. It will continue the beating till time is up. </item_text></item><item><item_text>Abort and Evict - If it is not snowing or raining: Faggot will be put in spikes and be sent outside with only a sleeping bag and a thin pad till morning. This serves as all owed sessions for the night.</item_text></item><item><item_text>Cigar Club Dance - Faggot will board its nuts and be hollow gagged with a clamp on its nose, and go to the garage naked. A cigar will be inserted in the gag and lit. Then the faggots balls will be massaged with a generous amount of heat cream followed by the faggot beating its balls with the Maul for the remainder of the hour.</item_text></item></section></game>');
+//Game Set	
+var content = content.concat('<game><name>NIGHT NOT-ALONE</name><section><sectionname>FAGGOT WILL SERVE</sectionname><n>4</n><item><item_text>Fagcicle - Faggot will fill a bowl with crushed ice and then water. It will then put its Cock and Balls through the Spider board. It will lay face down lowering its junk into the ice bath until the hour is up.</item_text></item><item><item_text>Wrapped and Ready - Faggot will be put in Hell wrap and then air stroke to cumshots for the remaining hour.</item_text></item><item><item_text>Crushed Cunting - Faggot will be deep throat gagged and plugged with the large stone. Then put in the crusher, tightening every two minutes until time is up.</item_text></item><item><item_text>Open Wide - Faggot will put on wrist cuffs and Place Big Brother on the floor in front of him. Its hands will be put behind its back and clipped. It must then put his mouth on Big Brother and suck and worship for the remaining hour. Big Brothers head must not ever leave the Faggots mouth, failure to be reported to Sir for punishment.</item_text></item><item><item_text>Drip Drip Drip - Faggot will strip naked and lay on the floor, with a taper candle in each hand it will drip wax over its chest, cock, and balls for the entire hour.</item_text></item><item><item_text>Plowed Fag Cunt - Faggot will be Pighooked and then ride Big Brother non-stop for the full hour - Big Brother is not allowed to leave its cunt once and it must not stop thrusting. Faggot will count the number of times it cums and report it to Sir.</item_text></item><item><item_text>Clippity Clip - Faggot will gather every clip and clamp from the toy bag. It will proceed to attach as many clamps as possible to its, balls, cock, nipples, ears, tongue, nostrils, armpits, and finger webbings as possible. it will then stand enduing them for the remainder of time. </item_text></item><item><item_text>One at a Time - Faggot will bind its Balls with ace wrap split and exposed to the maul. It will then beat each nut for 5 minutes each with the Single Nutter until time is served.</item_text></item><item><item_text>Stressed - Faggot will be Pighooked and its Balls bound in a brutal Double Flute which will then be tied to a table at a height that forces the faggot to squat. Faggot must stay in that position unable to sit or fully stand for the duration.</item_text></item><item><item_text>Cock on Fire - Faggot will be put in spikes and Stretcher then its cock will be flogged with the short leather whip till end of the hour.</item_text></item><item><item_text>The Stand In: Faggot will stand on the Spiked Tray, nipples clamped, balls in double flute and cock nullified while it beats each ball separately, hollow gagged so it drools helplessly all over itself.</item_text></item><item><item_text>Pain Ritual - Faggot will clamp its nipples and Kneel on the Spiked Tray and recite its mantra for 20 minutes. It will then stand remove its clamps and flog its nipples with the Nine Tail Whip for 10 minutes, and then kneel again reclamped. 20 more minutes kneeling and then more flogging till the time is up.</item_text></item></section></game>');
+//Game Set	
+var content = content.concat('<game><name>TREADMILL ALONE</name><section><sectionname>FAGGOT WILL SERVE</sectionname><n>5</n><item><min>2</min><max>4</max><item_text><span id=result></span> Miles: Naked, Barefoot, Pighooked, and Big Brother around neck</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked and Pighooked</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked and Stretched</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked, Stretched, and Plugged</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked, Stretched, Plugged, and Clamped</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked, Stretched, Plugged, Clamped, and Big Brother around neck</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Stretched, Clamped, Pighooked, and Big Brother around neck</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked with rope to treadmill</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Clamped with rope to treadmill</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked and Clamped with rope attached between them to treadmill</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Pighooked, Spray face with Piss every 5 minutes</item_text></item></section></game>');
+//Game Set	
+var content = content.concat('<game><name>TREADMILL NOT-ALONE</name><section><sectionname>FAGGOT WILL SERVE</sectionname><n>6</n><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Spiked, and Stretched</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Shirtless and Spiked</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Shirtless and Stretched</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Shirtless and Plugged</item_text></item><item><min>2</min><max>4</max><item_text><span id=result></span> Miles: Barefoot and Naked</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Shirtless, Spiked and Plugged</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Shirtless, Plugged and Stretched</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Shirtless and Clamped</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Shirtless, Spiked, Stretched, and Plugged</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Naked, Stretched, and Clamped</item_text></item><item><min>3</min><max>6</max><item_text><span id=result></span> Miles: Piss Soaked Shirt, Stretched, and Pighooked</item_text></item></section></game>');
+//Dice Set	
+var content = content.concat('<dice><name>Coin</name><n>2</n></dice><dice><name>d4</name><n>4</n></dice><dice><name>d6</name><n>6</n></dice><dice><name>d8</name><n>8</n></dice><dice><name>d10</name><n>10</n></dice><dice><name>d12</name><n>12</n></dice><dice><name>d20</name><n>20</n></dice>');
+//Rules 	
+var content = content.concat('<rules><name>Current Rules</name><n>1</n><game_sub>Faggots February Affliction Rules</game_sub><game_dates>Dates: 2/4/17 - 2/25/17*</game_dates><rules_text>Weekly Follower Tribute Beating:<br>Each Sunday of the duration at noon the faggot will put its balls in the steel Stretcher and then add a Hellwrap on them, followed by Air Stroking its cock in torment, serving a minute for every new follower over the last week.<br>It will then remove the wrap and immediately strike its balls once with the Ole Bastard bat for every Note recorded for the previous week.<br><br>Every Morning:<br>The faggots day starts at 5:30. It will immediately get up, prepare pets food, and be assigned a 1 hour torture and serve it.<br><br>Work Nights (Su-Th):<br>At 9:20pm faggot will roll a D4. If the d4 is 1-3 faggot will serve 1-3 hours of torture before bed. If it is a 4 It will serve 3 hours before bed and then wake at 4:30 for an additional morning hour of torture.<br><br>Weekend Nights (F-Sa):<br>At 9:20pm faggot will roll a D8. If the d8 is 1-7 faggot will serve 1-7 hours of torture before bed. If it is a 8 It will serve 7 hours before bed and then wake at 4:30 for an additional morning hour of torture.<br><br>Toilet Rules:<br>The faggot is not allowed to piss or shit until its morning punishment is completed. Before it may piss the first time each day it will roll a D20. If the roll is a multiple of 2 or 3 piss will be recycled for the entire day.<br>Every shit not used for other play will be deposited in the faggots hand and shoved in its mouth, chewed for 30 seconds, photographed, and then spit out.<br>Every piss not swallowed will be swished in the faggots mouth and then spit in a sealed bucket containing a t-shirt, a pair of socks, and a pair of boys toddler underwear.<br><br>Daily Workout:<br>Each Day at 5pm faggot will be assigned a number of miles it must walk on the treadmill and a torment to endure while walking.<br><br>Daily Report:<br>Every day faggot will post a video to its thisvid account.<br>Every day after the first day a post will be made to Tumblr with a link to the previous days video, a report of everything suffered, along with photos and a face shot.<br><br>Clothing:<br>Faggot will acquire a full set of workout clothes from thrift store, Shoes, Socks, VERY tight underwear, Skimpy Running Shorts, Tight Shirt. They will be soaked in the Piss Bucket and then hung to dry. It will wear this outfit for every workout and re-soak/dry it after each work out, when it is allowed to wear clothes at all. Faggot will also acquire a pair of loose pants that will require it to pull them up constantly, it is not allowed to wear a belt. The zipper will be cut from the fly so that its fly cannot be closed. These pants will be the only pants it is allowed to wear for the entire duration.<br><br><em>*Exact end date to be determined</em></rules_text></rules>');
+//Close Final div	
+var content = content.concat('</div>');
+var style = '<style>body{background-color:#000;padding:0px!important;margin:0px!important;font-family:Helvetica,Sans-serif;display:block;font-size:12px;}a{text-decoration:none}#mainTitleBlock{width:100%;display:block;clear:both;text-align:center;background-color:#000;font-size:2.3em;letter-spacing:.5em;margin-top:.5em;}#mainTextBlock{padding:0;width:100%;display:block;background-color:#000}#mainTitleBlock .game_title{color:#D9CDB0;font-weight:700;font-variant:small-caps}#buttonbox, #dicebox{margin:0;text-align:center}.button{background-color:#00402F;margin:.5em;padding:.75em;font-size:1em;color:#D9CDB0;webkit-border-radius:.75em;border-radius:.75em;display:inline-block;border:2px solid #D9CDB0;text-transform:uppercase}.button:hover{background-color:#403C34}.dice{background-color:#1E257F;margin:.5em;padding:.75em 1.2em 1.2em;font-size:1em;color:#D9CDB0;webkit-border-radius:.75em;border-radius:.75em;display:inline-block;border:2px solid #D9CDB0;text-transform:uppercase}.dice:hover{background-color:#2D37BF}#display{background-color:#403C34;padding:.75em;color:#D9CDB0;display:none;webkit-border-radius:.75em .75em .75em .75em;border-radius:.75em .75em .75em .75em;clear:both;font-size:1.2em}.result{display:inline;}#pckdg{background-color:#592224;padding:.75em;color:#D9CDB0;display:none;clear:both;text-align:center;webkit-border-radius:.75em .75em 0 0;border-radius:.75em .75em 0 0;text-transform:uppercase;letter-spacing:.5em;font-size:1.5em}#pckdsection{background-color:#360707;padding:.75em;color:#D9CDB0;display:none;webkit-border-radius:0 0 .75em .75em;border-radius:0 0 .75em .75em;clear:both;text-align:center;font-variant:small-caps;letter-spacing:.5em;font-size:1.5em}#rules{background-color:#592224;}#rules:hover{background-color:#403C34;}</style>';
+   $('body').html(style);
+   $('body').append(content);
+function getRandom(n, x) {
+    return Math.floor(Math.random()*(x-n+1)+n);
+};
+function pickRandGame() {
+	var pckdG = (getRandom(1,nG))-1;
+	populate(pckdG);
+};
+function populate(pckdG) {
+	var gname = $('name').eq(pckdG).html();
+	var nSection = $('game').eq(pckdG).find('section').length;
+	var pckdSection = (getRandom(1, nSection))-1;
+	var sectionname = $('game').eq(pckdG).find('sectionname').eq(pckdSection).html();
+	var nTrm = $('game').eq(pckdG).find('section').eq(pckdSection).find('item').length;
+	var pckdTrm = (getRandom(1, nTrm))-1;
+	var trmText = $('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('item_text').html();
+	var trmMinA = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min').text());
+	var trmMaxA = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max').text());
+	var randResultA = getRandom(trmMinA, trmMaxA);
+	var trmMinB = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min2').text());
+	var trmMaxB = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max2').text());
+	var randResultB = getRandom(trmMinB, trmMaxB);	
+	var trmMinC = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min3').text());
+	var trmMaxC = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max3').text());
+	var randResultC = getRandom(trmMinC, trmMaxC);	
+	$('#pckdg').css('display','block').css('margin','0 .5em');	
+	$('#pckdg').html(gname);
+	$('#pckdsection').css('display','block').css('margin','0 .5em');	
+	$('#pckdsection').html(sectionname);
+	$('#display').css('display','block').css('margin','.5em');	
+	$('#display').html(trmText);	
+	$('#result').text(randResultA);
+	$('#result2').text(randResultB);
+	$('#result3').text(randResultC);
+};
+function buildButtons() {
+	$('game').each( function() {
+		var a = $(this).find('name').text();
+		var b = $(this).find('n').text();
+		$('#buttonbox').append('<span id="dbutton'+b + '" class="button">'+a+'</span>');
+	});
+};
+function buildDice() {
+	$('rules').each( function() {
+		var a = $(this).find('name').text();
+		$('#dicebox').append('<span id=rules class=button>'+a+'</span>');
+	});
+	$('dice').each( function() {
+		var a = $(this).find('name').text();
+		var b = $(this).find('n').text();
+		$('#dicebox').append('<span id="die'+b + '" class="dice" data="'+b+'">'+a+'</span>');
+	});
+};
+
+//actions
+	//set actions
+	window.nG = $('game').length;
+	buildDice();
+	buildButtons();
+	$('#rules').click(function() {
+		console.log('Clicked Rules');
+		$('#pckdg').css('display','block').css('margin','0 .5em');	
+		$('#pckdg').html($('game_sub').html());
+		$('#pckdsection').css('display','block').css('margin','0 .5em');	
+		$('#pckdsection').html($('game_dates').text());
+		$('#display').css('display','block').css('margin','.5em');	
+		$('#display').html($('rules_text').html());
+	});
+	$('.dice').click(function() {
+		$('#display').css('display','none');
+		var d = $(this).attr('data');
+		var r = (getRandom(1, d));
+		if (d==2) {
+			if (r==1) {r="Heads"};
+			if (r==2){r="Tails"};
+			$('#pckdg').css('display','block').css('margin','0 .5em');	
+			$('#pckdg').html("Flip of Coin is:");
+			$('#pckdsection').css('display','block').css('margin','0 .5em');	
+			$('#pckdsection').html(r);	
+		} else {
+			$('#pckdg').css('display','block').css('margin','0 .5em');	
+			$('#pckdg').html('Roll of D'+d+' is: ');
+			$('#pckdsection').css('display','block').css('margin','0 .5em');	
+			$('#pckdsection').html(r);	
+		};
+	});
+	$('.greset').click(function() {
+		location.reload();
+	});
+	$('#pickrandgame').click(function() {
+		pickRandGame();
+	});
+	$('#dbutton1').click(function() {
+		populate(0);
+	});
+	$('#dbutton2').click(function() {
+		populate(1);
+	});
+	$('#dbutton3').click(function() {
+		populate(2);
+	});
+	$('#dbutton4').click(function() {
+		populate(3);
+	});
+	$('#dbutton5').click(function() {
+		populate(4);
+	});
+	$('#dbutton6').click(function() {
+		populate(5);
+	});
+	$('#dbutton7').click(function() {
+		populate(6);
+	});
+	$('#dbutton8').click(function() {
+		populate(7);
+	});
+	$('#dbutton9').click(function() {
+		populate(8);
+	});
+	$('#dbutton10').click(function() {
+		populate(9);
+	});
+	$('#dbutton11').click(function() {
+		populate(10);
+	});
+	$('#dbutton12').click(function() {
+		populate(11);
+	});
+	});		
+</script>
+</body>
+</html>
