@@ -538,15 +538,12 @@
 		<script>
 			//Game Functions	
 			$(document).ready(function(){
-			
 			//Return Random	
 			function getRandom(n, x) {
-			
 			    return Math.floor(Math.random()*(x-n+1)+n);
 			};
 			//Populate Selected Game and torture Information	
 			function populate(pckdG) {
-			
 				var gname = $('name').eq(pckdG).html();
 				var nSection = $('game').eq(pckdG).find('section').length;
 				var pckdSection = (getRandom(1, nSection))-1;
@@ -575,14 +572,11 @@
 			};
 			//Button for Rules and each Dice	
 			function buildRulesDice() {
-			
 				$('rules').each( function() {
-			
 					var a = $(this).find('name').text();
 					$('#dicebox').append('<span id=rules class=button>'+a+'</span>');
 				});
 				$('dice').each( function() {
-			
 					var a = $(this).find('name').text();
 					var b = $(this).find('n').text();
 					$('#dicebox').append('<span id="die'+b + '" class="dice" data="'+b+'">'+a+'</span>');
@@ -590,22 +584,18 @@
 			};
 			// Button for each Game	
 			function buildButtons() {
-			
 				$('game').each( function() {
-			
 					var a = $(this).find('name').text();
 					var b = parseInt($(this).find('n').text());
 					$('#buttonbox').append('<span id="dbutton'+b + '" class="button">'+a+'</span>');
 				});
 			};
-
 			//Init
 				window.nG = $('game').length;
 				buildRulesDice();
 				buildButtons();
 			//actions on Rules Click
 				$('#rules').click(function() {
-			
 					console.log('Clicked Rules');
 					$('#pckdg').css('display','block').css('margin','0 .5em');	
 					$('#pckdg').html($('game_sub').html());
@@ -615,23 +605,22 @@
 					$('#display').html($('rules_text').html());
 				});
 			//actions on Dice Click
-				$('.dice').click(function() {
-			
+				$('.dice').click(function() {	
 					$('#display').css('display','none');
 					var d = $(this).attr('data');
 					var r = (getRandom(1, d));
 					if (d==2) {
-			
 						if (r==1) {
-			r="Heads"};
+							r="Heads"
+						};
 						if (r==2){
-			r="Tails"};
+							r="Tails"
+						};
 						$('#pckdg').css('display','block').css('margin','0 .5em');	
 						$('#pckdg').html("Flip of Coin is:");
 						$('#pckdsection').css('display','block').css('margin','0 .5em');	
 						$('#pckdsection').html(r);	
 					} else {
-			
 						$('#pckdg').css('display','block').css('margin','0 .5em');	
 						$('#pckdg').html('Roll of D'+d+' is: ');
 						$('#pckdsection').css('display','block').css('margin','0 .5em');	
@@ -640,51 +629,39 @@
 				});
 			//actions on Game Button Click - this needs rewritten
 				$('#dbutton1').click(function() {
-			
 					populate(0);
 				});
 				$('#dbutton2').click(function() {
-			
 					populate(1);
 				});
 				$('#dbutton3').click(function() {
-			
 					populate(2);
 				});
 				$('#dbutton4').click(function() {
-			
 					populate(3);
 				});
 				$('#dbutton5').click(function() {
-			
 					populate(4);
 				});
 				$('#dbutton6').click(function() {
-			
 					populate(5);
 				});
 				$('#dbutton7').click(function() {
-			
 					populate(6);
 				});
 				$('#dbutton8').click(function() {
-			
 					populate(7);
 				});
 				$('#dbutton9').click(function() {
-			
 					populate(8);
 				});
 				$('#dbutton10').click(function() {
-			
 					populate(9);
 				});
 				$('#dbutton11').click(function() {
-			
 					populate(10);
 				});
 				$('#dbutton12').click(function() {
-			
 					populate(11);
 				});
 				});		
