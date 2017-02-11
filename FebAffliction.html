@@ -539,57 +539,57 @@
 			//Game Functions	
 			$(document).ready(function(){
 			//Return Random	
-			function getRandom(n, x) {
-			    return Math.floor(Math.random()*(x-n+1)+n);
-			};
+				function getRandom(n, x) {
+			    	return Math.floor(Math.random()*(x-n+1)+n);
+				};
 			//Populate Selected Game and torture Information	
-			function populate(pckdG) {
-				var gname = $('name').eq(pckdG).html();
-				var nSection = $('game').eq(pckdG).find('section').length;
-				var pckdSection = (getRandom(1, nSection))-1;
-				var sectionname = $('game').eq(pckdG).find('sectionname').eq(pckdSection).html();
-				var nTrm = $('game').eq(pckdG).find('section').eq(pckdSection).find('item').length;
-				var pckdTrm = (getRandom(1, nTrm))-1;
-				var trmText = $('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('item_text').html();
-				var trmMinA = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min').text());
-				var trmMaxA = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max').text());
-				var randResultA = getRandom(trmMinA, trmMaxA);
-				var trmMinB = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min2').text());
-				var trmMaxB = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max2').text());
-				var randResultB = getRandom(trmMinB, trmMaxB);	
-				var trmMinC = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min3').text());
-				var trmMaxC = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max3').text());
-				var randResultC = getRandom(trmMinC, trmMaxC);	
-				$('#pckdg').css('display','block').css('margin','0 .5em');	
-				$('#pckdg').html(gname);
-				$('#pckdsection').css('display','block').css('margin','0 .5em');	
-				$('#pckdsection').html(sectionname);
-				$('#display').css('display','block').css('margin','.5em');	
-				$('#display').html(trmText);	
-				$('#result').text(randResultA);
-				$('#result2').text(randResultB);
-				$('#result3').text(randResultC);
-			};
+				function populate(pckdG) {
+					var gname = $('name').eq(pckdG).html();
+					var nSection = $('game').eq(pckdG).find('section').length;
+					var pckdSection = (getRandom(1, nSection))-1;
+					var sectionname = $('game').eq(pckdG).find('sectionname').eq(pckdSection).html();
+					var nTrm = $('game').eq(pckdG).find('section').eq(pckdSection).find('item').length;
+					var pckdTrm = (getRandom(1, nTrm))-1;
+					var trmText = $('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('item_text').html();
+					var trmMinA = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min').text());
+					var trmMaxA = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max').text());
+					var randResultA = getRandom(trmMinA, trmMaxA);
+					var trmMinB = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min2').text());
+					var trmMaxB = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max2').text());
+					var randResultB = getRandom(trmMinB, trmMaxB);	
+					var trmMinC = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('min3').text());
+					var trmMaxC = parseInt($('game').eq(pckdG).find('section').eq(pckdSection).find('item').eq(pckdTrm).find('max3').text());
+					var randResultC = getRandom(trmMinC, trmMaxC);	
+					$('#pckdg').css('display','block').css('margin','0 .5em');	
+					$('#pckdg').html(gname);
+					$('#pckdsection').css('display','block').css('margin','0 .5em');	
+					$('#pckdsection').html(sectionname);
+					$('#display').css('display','block').css('margin','.5em');	
+					$('#display').html(trmText);	
+					$('#result').text(randResultA);
+					$('#result2').text(randResultB);
+					$('#result3').text(randResultC);
+				};
 			//Button for Rules and each Dice	
-			function buildRulesDice() {
-				$('rules').each( function() {
-					var a = $(this).find('name').text();
-					$('#dicebox').append('<span id=rules class=button>'+a+'</span>');
-				});
-				$('dice').each( function() {
-					var a = $(this).find('name').text();
-					var b = $(this).find('n').text();
-					$('#dicebox').append('<span id="die'+b + '" class="dice" data="'+b+'">'+a+'</span>');
-				});
-			};
+				function buildRulesDice() {
+					$('rules').each( function() {
+						var a = $(this).find('name').text();
+						$('#dicebox').append('<span id=rules class=button>'+a+'</span>');
+					});
+					$('dice').each( function() {
+						var a = $(this).find('name').text();
+						var b = $(this).find('n').text();
+						$('#dicebox').append('<span class="dice" data="'+b+'">'+a+'</span>');
+					});
+				};
 			// Button for each Game	
-			function buildButtons() {
-				$('game').each( function() {
-					var a = $(this).find('name').text();
-					var b = parseInt($(this).find('n').text());
-					$('#buttonbox').append('<span id="dbutton'+b + '" class="button">'+a+'</span>');
-				});
-			};
+				function buildButtons() {
+					$('game').each( function() {
+						var a = $(this).find('name').text();
+						var b = parseInt($(this).find('n').text());
+						$('#buttonbox').append('<span class="button gamebutton" data="'+b+'">'+a+'</span>');
+					});
+				};
 			//Init
 				window.nG = $('game').length;
 				buildRulesDice();
@@ -627,44 +627,12 @@
 						$('#pckdsection').html(r);	
 					};
 				});
-			//actions on Game Button Click - this needs rewritten
-				$('#dbutton1').click(function() {
-					populate(0);
+			//actions on Game Button Click
+				$('.gamebutton').click(function() {	
+					var d = $(this).attr('data');
+					populate(d-1);
 				});
-				$('#dbutton2').click(function() {
-					populate(1);
-				});
-				$('#dbutton3').click(function() {
-					populate(2);
-				});
-				$('#dbutton4').click(function() {
-					populate(3);
-				});
-				$('#dbutton5').click(function() {
-					populate(4);
-				});
-				$('#dbutton6').click(function() {
-					populate(5);
-				});
-				$('#dbutton7').click(function() {
-					populate(6);
-				});
-				$('#dbutton8').click(function() {
-					populate(7);
-				});
-				$('#dbutton9').click(function() {
-					populate(8);
-				});
-				$('#dbutton10').click(function() {
-					populate(9);
-				});
-				$('#dbutton11').click(function() {
-					populate(10);
-				});
-				$('#dbutton12').click(function() {
-					populate(11);
-				});
-				});		
+			});		
 		</script>
 	</body>
 </html>
